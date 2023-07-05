@@ -375,25 +375,7 @@ const LoginForm = () =>{
           </>
         }
   <div>
-  {showotp.show &&
-      <div className="container3">
-      <button className='backBtn' onClick={()=>{setShowOtp({...showotp,error:'',show:false} ,setOTP(''),setOtpError(''))}}><img src='back.png' alt='logo>' /></button>
-        <header>
-          <img className = 'logo'src='security.png' alt='logo>' />
-        </header>
-      <h4>Enter OTP Code</h4>
-      <form onSubmit={varifyOtp}>
-        
-        <OTPInput value={OTP} onChange={setOTP} autoFocus OTPLength={6} otpType="number" disabled={false} />
-        
-        <button className='submitBtn'>Verify OTP</button>
-      </form>
-      <footer>
-         <h3 style={{fontFamily:'serif'}}>Powered By @FlyBuy</h3>
-      </footer>
-      {otpEror!==''&& <p className='error-message'>*{otpEror}</p>}
-      </div>
-}
+  
       </div>
     </div>
 
